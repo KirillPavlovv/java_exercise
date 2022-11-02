@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  db:
+    restart: always
+    image: "postgres:11.8-alpine"
+    environment:
+      - PGUSER=postgres
+      - PGPASSWORD=postgres
+      - PGDATABASE=postgres
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pass
+      - POSTGRES_DB=postgres
+      - PORT = 1234
+    volumes:
+      - data:/var/lib/postgresql/data
+    ports:
+      - "1234:5432"
+volumes:
+  data:
+
+
