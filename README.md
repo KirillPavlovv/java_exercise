@@ -18,5 +18,3 @@ http://localhost:8080/
 
 
 * Frontend in Vue.js in [UI]
-http://localhost:8081
-
